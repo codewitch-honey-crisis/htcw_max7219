@@ -29,8 +29,7 @@
             "base": "examples/demo",
             "files": [
                 "platformio.ini",
-                "include/Bm437_ATI_9x16.h",
-                "include/Maziro.h",
+                "include/Bm437_Acer_VGA_8x8.h",
                 "src/main.cpp"
             ]
         }
