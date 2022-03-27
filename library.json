@@ -1,0 +1,38 @@
+{
+    "name": "htcw_max7219",
+    "version": "1.0.0",
+    "description": "Provides support for the MAX7219 8x8 LED matrix device w/ GFX",
+    "keywords": ["tft","max7219","led","matrix","graphics","drawing"],
+    "authors": {
+        "name":"honey the codewitch",
+        "homepage": "https://www.codeproject.com/Members/code-witch"
+    },
+    "license": "MIT",
+    "frameworks": ["arduino"],
+    "platforms": "*",
+    "build": {
+        "unflags": "-std=gnu++11",
+        "flags": "-std=gnu++14"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/codewitch-honey-crisis/htcw_max7219.git"
+    },
+    "dependencies": {
+        "codewitch-honey-crisis/htcw_gfx": "^1.0.2",
+        "codewitch-honey-crisis/htcw_tft_io": "^1.0.1"
+    },
+    "examples": [
+        {
+            "name": "Demo",
+            "base": "examples/demo",
+            "files": [
+                "platformio.ini",
+                "include/Bm437_ATI_9x16.h",
+                "include/Maziro.h",
+                "src/main.cpp"
+            ]
+        }
+    ]
+}
