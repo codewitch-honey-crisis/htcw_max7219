@@ -6,7 +6,7 @@
 #include <gfx_positioning.hpp>
 #include <tft_driver.hpp>
 namespace arduino {
-    template<uint8_t WidthSegments,uint8_t HeightSegments, int8_t PinCS,typename Bus, uint8_t Rotation = 0>
+    template<uint8_t WidthSegments,uint8_t HeightSegments, typename Bus, uint8_t Rotation = 0>
     struct max7219 final {
         
         static_assert(WidthSegments>0 && HeightSegments>0,"Not enough segments");
@@ -15,7 +15,6 @@ namespace arduino {
         constexpr static const uint16_t width_segments = WidthSegments;
         constexpr static const uint16_t height_segments = HeightSegments;
         constexpr static const uint8_t segments = WidthSegments*HeightSegments;
-        constexpr static const int8_t pin_cs = PinCS;
         constexpr static const uint8_t rotation = Rotation&3;
         using bus = Bus;
         using driver = tft_driver<-1,-1,-1,bus,-1>;

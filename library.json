@@ -1,6 +1,6 @@
 {
     "name": "htcw_max7219",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Provides support for the MAX7219 8x8 LED matrix device w/ GFX",
     "keywords": ["tft","max7219","led","matrix","graphics","drawing"],
     "authors": {
