@@ -17,7 +17,7 @@ using namespace gfx;
 #define LCD_ROTATION 0
 
 using bus_type = tft_spi_ex<LCD_HOST,PIN_NUM_CS,PIN_NUM_MOSI,PIN_NUM_MISO,PIN_NUM_CLK,0,false>;
-using matrix_type = max7219<LCD_WIDTH/8,LCD_HEIGHT/8,PIN_NUM_CS,bus_type,LCD_ROTATION> ;
+using matrix_type = max7219<LCD_WIDTH/8,LCD_HEIGHT/8,bus_type,LCD_ROTATION> ;
 using matrix_color = color<typename matrix_type::pixel_type>;
 using bmp_type = bitmap<typename matrix_type::pixel_type>;
     
