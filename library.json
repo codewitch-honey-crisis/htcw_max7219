@@ -1,6 +1,6 @@
 {
     "name": "htcw_max7219",
-    "version": "1.0.9",
+    "version": "1.1.0",
     "description": "Provides support for the MAX7219 8x8 LED matrix device w/ GFX",
     "keywords": ["tft","max7219","led","matrix","graphics","drawing"],
     "authors": {
@@ -20,8 +20,8 @@
         "url": "https://github.com/codewitch-honey-crisis/htcw_max7219.git"
     },
     "dependencies": {
-        "codewitch-honey-crisis/htcw_gfx": "^1.1.2",
-        "codewitch-honey-crisis/htcw_tft_io": "^1.0.7"
+        "codewitch-honey-crisis/htcw_gfx": "^1.1.3",
+        "codewitch-honey-crisis/htcw_tft_io": "^1.0.8"
     },
     "examples": [
         {
