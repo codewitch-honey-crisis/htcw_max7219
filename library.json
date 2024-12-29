@@ -1,14 +1,14 @@
 {
     "name": "htcw_max7219",
-    "version": "1.1.1",
-    "description": "Provides support for the MAX7219 8x8 LED matrix device w/ GFX",
+    "version": "2.0.0",
+    "description": "Provides support for the MAX7219 8x8 LED matrix device",
     "keywords": ["tft","max7219","led","matrix","graphics","drawing"],
     "authors": {
         "name":"honey the codewitch",
         "homepage": "https://www.codeproject.com/Members/code-witch"
     },
     "license": "MIT",
-    "frameworks": ["arduino"],
+    "frameworks": ["arduino","espidf"],
     "platforms": "*",
     "build": {
         "unflags": "-std=gnu++11",
@@ -19,17 +19,13 @@
         "type": "git",
         "url": "https://github.com/codewitch-honey-crisis/htcw_max7219.git"
     },
-    "dependencies": {
-        "codewitch-honey-crisis/htcw_gfx": "^1.1.3",
-        "codewitch-honey-crisis/htcw_tft_io": "^1.0.9"
-    },
     "examples": [
         {
             "name": "Demo",
             "base": "examples/demo",
             "files": [
                 "platformio.ini",
-                "include/Bm437_Acer_VGA_8x8.h",
+                "include/assets/vga_8x8.h",
                 "src/main.cpp"
             ]
         }
