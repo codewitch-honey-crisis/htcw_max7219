@@ -10,6 +10,8 @@ You can simply modify the contents of that buffer and call `update()` to update 
 
 Make sure to call `initialize()`. This will autoinit for you but it's good practice.
 
+Note that the Arduino orchestration will initialize the SPI bus for you, but the ESP-IDF variation requires you to initialize the bus/host yourself.
+
 ** I'm not so sure the rows work great. I've had some trouble getting those going past a single row
 
 
