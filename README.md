@@ -10,7 +10,7 @@ Unlike many MAX7219 drivers this one does not expose drawing methods. It is larg
 
 Instead, it prioritizes having a small footprint and being unobtrusive. It's a very compact library.
 
-To use it you simply modify the contents of that buffer and call `update()` to update the display.
+To use it you simply modify the contents of the frame buffer and call `update()` to update the display.
 
 Make sure to call `initialize()`. This will autoinit for you but it's good practice.
 
