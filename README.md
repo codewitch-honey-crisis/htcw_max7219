@@ -6,7 +6,9 @@ This takes the number of columns and rows of 8x8 matrices as an input.**
 
 It then presents a `frame_buffer()` you can read or write to. It's in monochrome format with pixels packed 8 to a byte horizontally, with no alignment or padding.
 
-You can simply modify the contents of that buffer and call `update()` to update the display.
+Unlike many MAX7219 drivers this one does not expose drawing methods. It is largely intended to be used with a graphics library of your choosing so long as it can create monochrome bitmaps
+
+To use it you simply modify the contents of that buffer and call `update()` to update the display.
 
 Make sure to call `initialize()`. This will autoinit for you but it's good practice.
 
